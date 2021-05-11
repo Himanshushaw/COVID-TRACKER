@@ -2,24 +2,12 @@
 <html>
 <head>
 	<title>Covid Live Updates</title>
-	<meta charset="utf-8">
+	<meta charset="utf-8">>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-</head>
-</head><!DOCTYPE html>
-<html>
-<head>
-	<title>Covid Live Updates</title>
-	<meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-</head>
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -31,7 +19,7 @@
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
       <li class="nav-item active">
-        <a class="nav-link" href="/CORONA/main.php">HOME<span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="main.php">HOME<span class="sr-only">(current)</span></a>
       </li>
     </ul>
   </div>
@@ -61,9 +49,7 @@
 
       $data= file_get_contents('https://api.covid19india.org/data.json');
       $coronadata= json_decode($data,true);
-      //echo"<pre>";
-      //print_r($coronadata);
-      //echo"</pre>";
+     
       $statecount=count($coronadata['statewise']);
       $i=1;
       while ($i<$statecount) {
@@ -112,17 +98,5 @@
 </body>
 </html>
 
-<body>
 
-	<?php 
-		include 'navi.php';
-		?>
 	
-		<br><p><b>All States/UTs Stats</b></p>
-
-		<?php
-		include 'tab.php';
-	?>
-
-</body>
-</html>
